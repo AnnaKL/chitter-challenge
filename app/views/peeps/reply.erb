@@ -1,0 +1,14 @@
+<% if current_user %>
+<h1> Reply to a peep </h1>
+
+<div>
+    <form action='/peeps/makereply' method='post'>
+      Message: <input type='text' name='message'>
+      <input type='submit' value='Add peep'>
+      <input type='hidden' name='initialpeep_id' value='<%=@initialpeep_id%>'>
+    </form>
+</div>
+<% else %>
+    <a href="/users/new" id="sign-up">Sign Up</a>
+    <a href="/sessions/new" id="sign-in">Sign In</a>
+<% end %>

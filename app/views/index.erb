@@ -1,7 +1,13 @@
 <h2> Current messages </h2>
 <ul>
 <% @peeps.reverse.each do |peep| %>
-   <li>"<%= peep.message%>"      <%=peep.user.name%>  @<%=peep.user.username %>  <%=peep.created_at.strftime('%F %H:%M')%></li>
+   <li>"<%= peep.message%>"      <%=peep.user.name%>  @<%=peep.user.username %>  <%=peep.created_at.strftime('%F %H:%M')%><br></li>
+   <%if session["user_id"] %>
+    <form action='/peeps/createreply' method='post'>
+      <input type='hidden' name='initialpeep_id' value='<%=peep.id%>'>
+      <input type='submit'onclick="/peeps/reply" value=' Reply'>
+    </form>
+  <% end %>
  <% end %>
 </ul>
 <% if current_user %>

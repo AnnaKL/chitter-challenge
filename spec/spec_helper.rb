@@ -7,7 +7,7 @@ require 'rspec'
 require 'capybara/rspec'
 require 'data_mapper'
 
-Capybara.app = Sinatra::Application
+Capybara.app = Chitter
 
 SimpleCov.formatters = [
   SimpleCov::Formatter::HTMLFormatter,
