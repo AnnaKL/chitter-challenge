@@ -16,7 +16,6 @@ class Chitter < Sinatra::Base
 
   post '/peeps/makereply' do
     @initial = Peep.get(params['initialpeep_id'])
-    p @initial
     @peep = Peep.create(message: "@#{@initial.user.username} " + params['message'], user_id: current_user.id)
     redirect to ('/')
   end

@@ -7,11 +7,7 @@ module SessionHelpers
     click_button 'Sign in'
   end
 
-  def sign_up(name = "Anna Klimas",
-              username = "ania2ab",
-              email = "anna@klimas.com",
-              password = "apple",
-              password_confirmation = 'apple')
+  def sign_up(name, username, email, password, password_confirmation)
     visit '/users/new'
     fill_in :name, :with => name
     fill_in :username, :with => username
@@ -22,8 +18,16 @@ module SessionHelpers
   end
 
   def add_peep(message)
-      visit '/peeps/new'
+      visit('/')
+      click_link 'Click to add new peep'
       fill_in 'message', :with => message
       click_button 'Add peep'
   end
+
+  def reply_to_peep(message)
+      visit('/')
+      click_button "Reply"
+      fill_in 'message', :with => message
+      click_button 'Add peep'
+    end
 end
