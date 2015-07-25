@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/repos/55b38c3ae30ba01522002833/badges/cd65f97bfdcfac195449/gpa.svg)](https://codeclimate.com/repos/55b38c3ae30ba01522002833/feed)
 
 Chitter Challenge
 =================
