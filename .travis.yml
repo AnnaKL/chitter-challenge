@@ -5,6 +5,7 @@ script:
   - bundle exec cucumber
 
 before_install:
+- sudo: false
 - sudo apt-get update -qq
 - sudo apt-get install -qq postgresql-server-dev-9.3
 
