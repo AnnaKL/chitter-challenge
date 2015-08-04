@@ -1,23 +1,21 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container_fluid">
-    <div class="navbar-header">
-	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	       <ul class="nav navbar-nav">
-	      <h1 class="navbar-brand"> Chitter </h1>
-	      <% if current_user %>
-	       <form class="nav navbar-brand"  method='post' action='/sessions'>
-			     <input type='hidden' name='_method' value='delete'>
-			      <input type='submit' value="Sign out">
-			   </form>
-	          <h2 class="nav navbar-brand">Welcome, <%= current_user.email %></h2>
-	       <% else %>
-			     <a class="nav navbar-brand navbar-right" href="/users/new" id="sign-up">Sign Up</a>
-			    <a class="nav navbar-brand" href="/sessions/new" id="sign-in">Sign In</a>
-	       <% end %>
-	       </ul>  
-		   </div>
-	       </div>
-	       </dv>
-	  
- 
+	<div class="container_fluid">
+		<div class="navbar-header">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+				<h1 id="chitter" class="nav navbar-brand"> Chitter </h1>
+					<% if current_user %>
+						<form  id="sign-out" class="nav navbar-brand"  method='post' action='/sessions'>
+						<input type='hidden' name='_method' value='delete'>
+						<input class="nav navbar-brand" type='submit' value="Sign out">
+						</form>
+						<h2 id="email" class="nav navbar-brand">Welcome, <%= current_user.email %></h2>
+					<% else %>
+						<a class="nav navbar-brand navbar-right" href="/users/new" id="sign-up">Sign Up</a>
+						<a class="nav navbar-brand" href="/sessions/new" id="sign-in">Sign In</a>
+					<% end %>
+				</ul>  
+			</div>
+		</div>
+	</div>
 </nav>

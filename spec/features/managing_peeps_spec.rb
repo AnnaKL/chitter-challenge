@@ -19,7 +19,7 @@ feature 'User can' do
   scenario 'add peeps' do
     expect(Peep.count).to eq(0)
     sign_in("anna@klimas.com", "apple")
-    click_link 'Click to add new peep'
+    click_link 'Add new peep'
     add_peep('This is my first peep')
     expect(Peep.count).to eq(1)
     peep = Peep.first
@@ -31,7 +31,7 @@ feature 'User can' do
     add_peep('This is my first peep')
     add_peep('This is my second peep')
     add_peep('This is my third peep')
-    expect(page).to have_selector('li:first-child', :text => "This is my third peep")
+    expect(page).to have_selector('div:first-child', :text => "This is my third peep")
   end
 
   scenario 'cannot add the peep when not logged' do

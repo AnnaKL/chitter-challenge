@@ -1,5 +1,58 @@
 .container {
-	background-color: red;
+	position: relative;
+    top: 200px;
+
+}
+.jumbotron {
+	height: 50% !important;
+	width: 105% !important;
+	background:#E3E0FA !important;
+	position: relative;
+    top: 10px;
 }
 
+#all-peeps {
+	height: 50%;
+	width: 100%;
+}
 
+#peeps{
+   float: none;
+   margin: 0 auto;
+}
+
+#all-peeps {
+	font-size: 1.2em;
+}
+
+a:link, a:visited, a:hover, a:active {
+	font-size: 2em;
+	color: black;
+}
+
+#sign-out {
+	position: relative;
+    left: 1600px;
+}
+
+#sign-in {
+	position: relative;
+    left: 1350px;
+}
+
+#sign-up {
+	position: relative;
+    left: 1350px;
+}
+
+#chitter {
+	font-size: 3em;
+	position: relative;
+    left: 100px;
+}
+
+#email {
+	font-size: 2em;
+	position: relative;
+    left: 40px;
+}

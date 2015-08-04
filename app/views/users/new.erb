@@ -1,9 +1,26 @@
 <h1> Please fill in the form to sign up</h1>
-
-<form action='/users' method='post'>
-  Name: <input name='name' type='text'>
-  Username: <input name='username' type='text' value='<%= @user.username %>'>Email: <input name='email' type='text' value='<%= @user.email %>'>
-  Password: <input name='password' type='password'>
-  Password Confirmation: <input name='password_confirmation' type= 'password'>
-  <input type='submit' value='Sign up'>
-</form>
+<div class="jumbotron container fluid">
+  <form role="form" action='/users' method='post'>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input name='name' class="form-control" type='text'>
+    </div>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input name='username' type='text' class="form-control" value='<%= @user.username %>'>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input name='email' class="form-control" type='text' value='<%= @user.email %>'>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input class="form-control" name='password' type='password'>
+    </div>
+    <div class="form-group">
+      <label for="password_confirmation">Password Confirmation:</label>
+      <input name='password_confirmation' class="form-control" type= 'password'>
+    </div>
+    <input type='submit' class="btn btn-default" value='Sign up'>
+  </form>
+</div>

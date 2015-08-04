@@ -3,6 +3,8 @@
 Chitter Challenge
 =================
 
+![Picture 1](public/img/screenhot1.png)  ![Picture 2](public/img/screenshot2.png)
+
 Challenge:
 -------
 

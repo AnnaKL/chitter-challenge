@@ -1,7 +1,14 @@
 <h1>Please sign in </h1>
-
-<form method="post" action="/sessions">
-  Email: <input type="text" name='email'>
-  Password: <input type="password" name='password'>
-  <input type="submit" value="Sign in">
-</form>
+<div class="jumbotron container fluid">
+	<form role="form" method="post" action="/sessions">
+		<div class="form-group">
+			<label for="email">Email:</label>
+			<input type="text" class="form-control" name='email'>
+		</div>
+		<div class="form-group">
+			<label for="password">Password:</label>
+			<input type="password" class="form-control" name='password'>
+		</div>
+		<input type="submit" class="btn btn-default" value="Sign in">
+	</form>
+</div>

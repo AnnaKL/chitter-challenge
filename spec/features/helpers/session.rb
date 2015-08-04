@@ -19,7 +19,7 @@ module SessionHelpers
 
   def add_peep(message)
       visit('/')
-      click_link 'Click to add new peep'
+      click_link 'Add new peep'
       fill_in 'message', :with => message
       click_button 'Add peep'
   end
