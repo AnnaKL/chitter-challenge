@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/repos/55b38c3ae30ba01522002833/badges/cd65f97bfdcfac195449/gpa.svg)](https://codeclimate.com/repos/55b38c3ae30ba01522002833/feed)  [![Build Status](https://travis-ci.org/AnnaKL/chitter-challenge.svg?branch=master)](https://travis-ci.org/AnnaKL/chitter-challenge)  [![Coverage Status](https://coveralls.io/repos/AnnaKL/chitter-challenge/badge.svg?branch=master&service=github)](https://coveralls.io/github/AnnaKL/chitter-challenge?branch=master)
+  [![Build Status](https://travis-ci.org/AnnaKL/chitter-challenge.svg?branch=master)](https://travis-ci.org/AnnaKL/chitter-challenge)  [![Coverage Status](https://coveralls.io/repos/AnnaKL/chitter-challenge/badge.svg?branch=master&service=github)](https://coveralls.io/github/AnnaKL/chitter-challenge?branch=master)
 
 Chitter Challenge
 =================
