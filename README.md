@@ -47,6 +47,7 @@ Implemented functionalities:
 * See messages on the homepage when user is not logged
 * Messages have name, username and current time attached
 * Messages are displayed in reverse chronological order.
+* User can reply to message.
 
 
 Technologies:
@@ -62,8 +63,16 @@ Technologies:
 
 How to run:
 ----------
-* To install run bundle install in the application directory
-* To run the test type 'rspec'in the application directory
-* To launch the local version type 'rackup' in the application directory and type 'http://localhost:9292/' in the browser.
+
+* To install run :
+````
+git clone git@github.com:AnnaKL/chitter-challenge.git
+cd chitter-challenge
+bundle install
+rackup
+type http://localhost:9292/ in the browser
+```
+
+* To run the test type ```rspec``` in the application directory
 
 
