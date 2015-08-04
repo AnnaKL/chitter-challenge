@@ -74,5 +74,3 @@ type http://localhost:9292/ in the browser
 ```
 
 * To run the test type ```rspec``` in the application directory
-
-
